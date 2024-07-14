@@ -228,6 +228,10 @@ var StorageDialog = function(editorUi, fn, rowLimit)
 			addLogo(IMAGE_PATH + '/dropbox-logo.svg', mxResources.get('dropbox'), App.MODE_DROPBOX, 'dropbox');
 		}
 
+		if (typeof window.S3Client === 'function')
+			{
+				addLogo(IMAGE_PATH + '/dropbox-logo.svg', 'S3', App.MODE_DROPBOX, 'dropbox');
+			}
 		if (editorUi.gitHub != null)
 		{
 			addLogo(IMAGE_PATH + '/github-logo.svg', mxResources.get('github'), App.MODE_GITHUB, 'gitHub');
