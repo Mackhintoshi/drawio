@@ -210,6 +210,11 @@ App.MODE_GOOGLE = 'google';
 App.MODE_DROPBOX = 'dropbox';
 
 /**
+ * S3 mode
+ */
+App.MODE_AWSs3 = 's3';
+
+/**
  * OneDrive Mode
  */
 App.MODE_ONEDRIVE = 'onedrive';
